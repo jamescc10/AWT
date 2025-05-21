@@ -39,6 +39,11 @@ function log(msg) {
         fs.appendFileSync("log.txt", msg+"\n");
 }
 
+function devlog(msg) {
+    if(config.dev.log_data)
+        console.log(msg);
+}
+
 // run cmd
 function run_cmd(cmd, output) {
     exec(cmd, (error, stdout, stderr) => {
@@ -60,7 +65,7 @@ function run_cmd(cmd, output) {
 }
 
 // watch for updates
-fs.watch(`./${projectDir}`, (eventType, filename) => {
+fs.watch(projectDir, {recursive: true}, (eventType, filename) => {
     log(`File changed ${filename}`);
     if(eventType == "change" && filename == currentPage) {
         log("Refreshing");
