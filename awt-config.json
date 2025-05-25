@@ -4,6 +4,8 @@
     "port": 5124,
     "log_data": true,
     "log_data_in_file": false,
+    "start_on_android": true,
+    "start_on_computer": true,
 
     "dev": {
         "log_data": true

@@ -1,10 +1,10 @@
 {
   "name": "awt",
   "version": "1.0.0",
-  "main": "awt.js",
+  "main": "./src/awt.js",
   "scripts": {
-    "start": "node awt.js",
-    "build": "pkg awt.js --targets node*-win-x64,node*-macos-x64,node*-linux-x64 --output ./build/awt"
+    "start": "node ./src/awt.js",
+    "build": "pkg ./src/awt.js --targets node*-win-x64,node*-macos-x64,node*-linux-x64 --output ./build/awt"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +12,8 @@
   "description": "",
   "dependencies": {
     "express": "^5.1.0",
+    "express-ws": "^5.0.2",
+    "mime": "3.0.0",
     "open": "^10.1.2",
     "pkg": "^5.8.1"
   }

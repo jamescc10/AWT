@@ -1,5 +1,5 @@
-# AWT (Android Website Testing)
-This is a tool that lets you test websites on android. When you save the code it refreshes.
+# AWT (Amazing Website Testing)
+This is a tool that lets you test websites on computer/android or both. When you save the code it refreshes.
 
 # Download
 First you need to install ADB with `winget install Google.PlatformTools`
