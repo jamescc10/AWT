@@ -23,6 +23,7 @@ Add awt-config.json to the same directory as the executable.
 - log_data_in_file(boolean) - if awt should log the data in a file
 - start_on_android(boolean) - if awt starts on android
 - start_on_computer(boolean) - if awt starts on host computer
+- dev/log_data(boolean) - if awt logs dev data only use if awt dev
 ```json
 {
     "project_path": "example_project",
